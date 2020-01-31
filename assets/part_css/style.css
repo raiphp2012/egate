@@ -1,0 +1,114 @@
+
+
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+
+
+
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+.count-particles h1{
+  color:#fff;
+  font-size:35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:200;
+ 
+}
+.count-particles h2{
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+ 
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-size:19px;
+}
+.count-particles{
+
+  position: absolute;
+  top: 290px;
+  left:0;
+  width:99%;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  /* position:relative; */
+  width: 100%;
+  max-height:500px;
+  background:black;
+  background-image: url('ezgif.com-video-to-gif.gif');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+}
+
+/* .part_cont{
+  position:absolute;
+  top:0;
+  left:0;
+} */
+
+/* slider ------------------*/
+
+
+
+/* end of slider */
