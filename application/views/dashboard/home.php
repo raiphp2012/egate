@@ -16,88 +16,46 @@
 	<body>
 		
 	<!-- <div class="fh5co-loader"></div> -->
-	
 	<div id="page">
 	<!-- start header navbar -->
 	<?php $this->load->view('common/header');?>	
 	<!-- end of header navbar -->
 
-	<aside id="fh5co-hero" class="js-fullheight">
+	<!-- <aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
 		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
 		   		<div class="overlay-gradient"></div>
-		   		<!-- <div class="container" style="display:none;">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$800</span>
-		   						<h2>Pojector 1</h2>
-		   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			   					<p><a href="single.html" class="btn btn btn-outline btn-lg">Purchase Now</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div> -->
+		   		
 		   	</li>
 		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
-		   		<!-- <div class="container" style="display:none;">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$530</span>
-		   						<h2>Pojector 2</h2>
-		   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			   					<p><a href="single.html" class="btn btn btn-outline btn-lg">Purchase Now</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div> -->
+		   		
 		   	</li>
 			   <li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
 				
-				
-		   		<!-- <div class="container" style="display:none;">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$750</span>
-		   						<h2>Pojector 3</h2>
-		   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			   					<p><a href="single.html" class="btn btn btn-outline btn-lg">Purchase Now</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div> -->
 		   	</li>
 		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
-		   		<!-- <div class="container" style="display:none;">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$540</span>
-		   						<h2>Pojector 4</h2>
-		   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			   					<p><a href="single.html" class="btn btn btn-outline btn-lg">Purchase Now</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div> -->
+		   		
 		   	</li>
 		  	</ul>
 	  	</div>
-	</aside>
+	</aside> -->
+
+	<div class="ab_banner">
+		<img src="<?php echo base_url('./assets/images/banner/home_page_b_anner_1.jpg');?>" width="100%">
+		
+	</div>
 	
     <!-- start Choose the projector -->
 	<div id="fh5co-product">
 		<div class="container-fluid">
-			<div class="row animate-box">
+			<div class="row ">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Choose the projector that suits your lifestyle</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+				<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
 						<div class="product-grid" style="background-image:url(./assets/images/i_series/i9-series.jpg);">
 							<a href="product.html">
@@ -108,7 +66,7 @@
 									</p>
 								</div>
 						    </a>
-						</div>s
+						</div>
 						<div class="desc">
 							<h3><a href="product.html">I SERIES</a></h3>
 							<p class="price">
@@ -144,7 +102,7 @@
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(./images/i_series/p531-series.jpg);">
+						<div class="product-grid" style="background-image:url(./assets/images/i_series/p531-series.jpg);">
 							<div class="inner">
 								<p>
 									<a href="product.html" class="icon"><i class="icon-shopping-cart"></i></a>

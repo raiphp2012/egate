@@ -3,7 +3,7 @@
 			<div class="row">
 					<div class="col-md-4 col-xs-2">
 							<div id="fh5co-logo"><a href="<?php echo base_url();?>">
-								<img src="<?php echo base_url('assets/');?>images/logoxxxxxx.png" >
+								<img src="<?php echo base_url('assets/images/logoxxxxxx.png');?>" >
 							</a></div>
 					</div>
 					<div class="col-md-8 col-xs-5 col-sm-8 menu-1">
@@ -37,39 +37,39 @@
 												<li class="dropdown-submenu">
 														<a href="product.html"><img src="<?php echo base_url('assets/');?>images/19--(1).png" width="50%">i series</a>
 														
-												<ul class="dropdown-menu sub_cat">
+												<!-- <ul class="dropdown-menu sub_cat">
 													<li><a href="EG_I9.html">EG i9</a></li><br>
 													<li><a href="eg_i9_m.html">EG i9 M</a></li><br>
 													<li><a href="eg_i9_a.html">EG i9 A</a></li>
-												</ul>
+												</ul> -->
 												</li>
 
 												<li class="dropdown-submenu sub_cat">
 														<a href="product.html"><img src="<?php echo base_url('assets/');?>images/K9-1.png" width="50%">k series</a>
 														
-												<ul class="dropdown-menu sub_cat">
+												<!-- <ul class="dropdown-menu sub_cat">
 													<li><a href="k9.html">K9</a>
 													
 													</li><br>
 													<li><a href="k9_m.html">K9 M</a></li><br>
 													<li><a href="k9_a.html">K9 A</a></li><br>
-												</ul>
+												</ul> -->
 												</li>
 
 												<li class="dropdown-submenu sub_cat">
 													  <a href="product.html"><img src="<?php echo base_url('assets/');?>images/p9-3.png" width="50%">P series</a>
 														
-												<ul class="dropdown-menu sub_cat">
+												<!-- <ul class="dropdown-menu sub_cat">
 													<li><a href="EG_P9M.html">EG P9M</a></li><br>
 													<li><a href="EG_P9.html">EG P9</a></li><br>
 													<li><a href="EG_P531.html">EG P531</a></li><br>
-												</ul>
+												</ul> -->
 												</li>
 												
 												<li class="dropdown-submenu sub_cat">
 														<a href="product.html"><img src="<?php echo base_url('assets/');?>images/x3-2.png" width="50%">X series</a>
 														
-												<ul class="dropdown-menu sub_cat">
+												<!-- <ul class="dropdown-menu sub_cat">
 													<li><a href="X_12.html">X12</a></li><br>
 													<li><a href="X_9.html">X9</a></li><br>
 													<li><a href="X_6.html">X6</a></li><br>
@@ -78,15 +78,12 @@
 													<li><a href="X_3.html">X3</a></li><BR>
 													<li><a href="X3_M.html">X3 M</a></li><BR>
 													<li><a href="X3_A.html">X3 A</a></li><BR>
-												</ul>
+												</ul> -->
 												</li>
 												<li class="dropdown-submenu sub_cat">
 														<a href="Q_series.html"><img src=""<?php echo base_url('assets/');?>images/p9-3.png" width="50%">Q series</a>
 														  
-												  <ul class="dropdown-menu sub_cat">
-													  <li><a href="#">Coming soon</a></li>
-													  
-												  </ul>
+												  
 												</li>
 											</ul>
 											

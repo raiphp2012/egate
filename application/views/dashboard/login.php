@@ -12,17 +12,7 @@
 				<a href="#" class="active" id="login-box-link">Login</a>
 				<a href="#" id="signup-box-link">Sign Up</a>
 			</div>
-			<!-- <div class="social-login">
-				<a href="#">
-					<i class="fab fa-facebook-f"></i>
-				Login in with facebook
-				</a>
-				<a href="#">
-					<i class="fab fa-google-plus-g"></i>
-				log in with Google
-				</a>
-			</div> -->
-			<form class="email-login sign_in" style="padding-top:50px;">
+			<form class="email-login sign_in" style="padding-top:50px;" action="<?php echo base_url('');?>" method="post">
 				<div class="u-form-group">
 				<input type="email" placeholder="Email"/>
 				</div>

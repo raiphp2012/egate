@@ -2,9 +2,7 @@
 <html>
 <?php $this->load->view('common/head');?>
 <body>
-
 	<!-- <div class="fh5co-loader"></div> -->
-	
 	<div id="page">
 		<!-- start header navbar -->
 		<?php  $this->load->view('common/header');?>
@@ -13,8 +11,7 @@
 		<div class="ab_banner">
 			<img src="<?php echo base_url('assets');?>/images/elearning.jpg" width="100%">
 			<div class="ab_text">
-				<h1>elearning</h1>
-				
+				<h1>elearning</h1>	
 			</div>
 		</div>
 
