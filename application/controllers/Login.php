@@ -32,13 +32,16 @@ class Login extends CI_Controller
       $admindata = $this->Login_model->adminvalid($username,$password);
       if($admindata)
       {
-       $this->session->set_userdata(array('user_type'=>$admindata['a_type'],'id'=>$admindata['a_id'],'username'=>$admindata['a_user'],'password'=>$admindata['password']));
-       if($admindata['a_id']=='3')
+       $this->session->set_userdata(array('id'=>$admindata['id'],'username'=>$admindata['username'],'password'=>$admindata['password']));
+       if($admindata)
        {
+        // print_r($admindata);die();
          redirect('admincontroller/index');
        }
        else
        {
+        // print_r($admindata);die();
+
         redirect('admincontroller');
       }
     }                       
@@ -59,7 +62,7 @@ class Login extends CI_Controller
 public function logout()
 {
 
- $this->session->unset_userdata('id');
+ $this->session->unset_userdata('username');
  $this->session->sess_destroy();
  redirect('login/login1');
 

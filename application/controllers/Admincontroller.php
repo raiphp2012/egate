@@ -11,15 +11,10 @@
        $this->load->model('Admin_model');
        $this->load->library('email');
        $this->load->library('session');
-           // print_r($_SESSION);die();
-           // $this->load->library('excel');
-         if(($this->session->userdata('username')))
-         	if($_SESSION['password']=='')
-               {
-               		redirect('Login/login1');
-               }else{
-
-               }     
+       if(empty($this->session->userdata('username'))){
+          
+          redirect('Login/login1');
+        }     
      }
      function index()
      {

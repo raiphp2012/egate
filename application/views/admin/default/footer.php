@@ -109,7 +109,8 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-<script src="<?php echo base_url(); ?>assets/admin/files/assets/js/rocket-loader.min.js" data-cf-settings="3af5b6b5f1a1f808b182c1ef-|49" defer=""></script></body>
+<!-- <script src="<?php echo base_url(); ?>assets/admin/files/assets/js/rocket-loader.min.js" data-cf-settings="3af5b6b5f1a1f808b182c1ef-|49" defer=""></script></body> -->
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3af5b6b5f1a1f808b182c1ef-|49" defer=""></script></body>
 
 <!-- Mirrored from colorlib.com//polygon/admindek/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 13:16:44 GMT -->
 </html>
