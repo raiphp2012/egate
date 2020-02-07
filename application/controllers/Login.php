@@ -20,28 +20,23 @@ class Login extends CI_Controller
 
   public function loginprocess()
   {
-
      $this->form_validation->set_rules('username','User Name','required|trim');
      $this->form_validation->set_rules('password','Password','required|trim');
      if ($this->form_validation->run())
      {
-
       $username=$this->input->post('username');
       $password=$this->input->post('password');
       $this->load->model('Login_model');
       $admindata = $this->Login_model->adminvalid($username,$password);
       if($admindata)
       {
-       $this->session->set_userdata(array('id'=>$admindata['id'],'username'=>$admindata['username'],'password'=>$admindata['password']));
-       if($admindata)
+       $this->session->set_userdata(array('user_type'=>$admindata['a_type'],'id'=>$admindata['a_id'],'username'=>$admindata['a_user'],'password'=>$admindata['password']));
+       if($admindata['a_id']=='3')
        {
-        // print_r($admindata);die();
          redirect('admincontroller/index');
        }
        else
        {
-        // print_r($admindata);die();
-
         redirect('admincontroller');
       }
     }                       
@@ -62,7 +57,7 @@ class Login extends CI_Controller
 public function logout()
 {
 
- $this->session->unset_userdata('username');
+ $this->session->unset_userdata('id');
  $this->session->sess_destroy();
  redirect('login/login1');
 

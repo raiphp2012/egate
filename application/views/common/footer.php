@@ -1,71 +1,36 @@
   <!-- start footer -->
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container" style="width:98%;">
-		<!-- <div class="f_nav">
-			<ul>
-					<li class="footer-list-item"><a href="https://group.EGATE.com/">Company</a></li>
-					<li class="footer-list-item"><a href="/in/footer/download-brochures">Download Brochures</a></li>
-					<li class="footer-list-item"><a href="/in/footer/contact-us">Contact Us</a></li>
-					
-			</ul>
-			<ul class="f2_nav">
-					<li class="footer-list-item"><a href="/in/footer/EGATE-in-the-news">EGATE in the News</a></li>
-					<li class="footer-list-item"><a href=" https://group.EGATE.com/careers">Careers</a></li>
-					<li class="footer-list-item"><a href="https://www.media.EGATE.com/" rel="noopener noreferrer" target="_blank">Media/Press</a></li>
-				
-			</ul>
-		</div> -->
-     <div class="my_ftr">
-			 
-		 </div>
 			<div class="row copyright">
 				<div class="col-md-12">
-						
-					<!-- <p>
-						<small class="block">&copy; 2019 Prahtam vision. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">Pratham Vision</a> <a href="http://blog.gessato.com/" target="_blank"></a>  <a href="http://unsplash.co/" target="_blank"></a></small>
-					</p> -->
-					<!-- <p>
-						
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p> -->
-					<!-- <div class="f_logo">
-						<img src="<?php echo base_url('assets/');?>images/logoxxxxxx_b&w.jpg " width="20%">
-					</div> -->
 					<div class="col-md-2 col-sm-12 col-xs-12 footr">
 						<div class="f-over">
-									 <ul>
-										<li><h3>About us</h3></li>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">About US</a></li>
-										<li><a href="#">contact US</a></li>
-										<li><a href="#">Gallery</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="#">Career</a></li>
-									 </ul>
+							<ul>
+								<li><h3>About us</h3></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About US</a></li>
+								<li><a href="#">contact US</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Career</a></li>
+							</ul>
 						</div>
-			    </div>       
+					</div>       
+			    <div class="col-md-2 col-sm-12 col-xs-12 footr">
+			    	<div class="f-over">
+			    		<ul>
+			    			<li><h3>Quick Link</h3></li>
+			    			<li><a href="#">News</a></li>
+			    			<li><a href="#">E-Learning</a></li>
+			    			<li><a href="#">News Arrivals</a></li>
+			    			<li><a href="#">Employee Login</a></li>
+			    			<li><a href="#">Become A Partner</a></li>
+			    			<li><a href="#">Press Reless</a></li>
+			    		</ul>
 
-				   <div class="col-md-2 col-sm-12 col-xs-12 footr">
-             <div class="f-over">
-                    <ul>
-											<li><h3>Quick Link</h3></li>
-											<li><a href="#">News</a></li>
-											<li><a href="#">E-Learning</a></li>
-											<li><a href="#">News Arrivals</a></li>
-											<li><a href="#">Employee Login</a></li>
-											<li><a href="#">Become A Partner</a></li>
-											<li><a href="#">Press Reless</a></li>
-										</ul>
-										
-									
-             </div>
-        </div>
+
+			    	</div>
+			    </div>
         
 				<div class="col-md-2 col-sm-12 col-xs-12 footr">
 					<div class="f-over">
@@ -82,68 +47,55 @@
 							 
 					</div>
 		        </div>
+		        <div class="col-md-3 col-sm-12 col-xs-12 footr">
+		        	<div class="f-over">
+		        		<ul>
+		        			<li><h3>Contact Us</h3></li>
+		        			<p> Sec 9, Vasundhara Ghaziabad, UP</p>
+		        			<p>Email- <a href="">info@egate.pro</a></p>
 
-		 <div class="col-md-3 col-sm-12 col-xs-12 footr">
-			<div class="f-over">
-						 <ul>
-								<li><h3>Contact Us</h3></li>
-									
-								<p>
-									Sec9, Vasundhara 
-									Ghaziabad, UP
-								</p>
-								<p>Email-
-									<a href="">info@egate.pro</a>
-								</p>
+		        			<p>Phone- <a href="">0120 4120225</a>
+		        			</p>
+		        			<ul class="fh5co-social-icons">
+		        				<li><a href="#"><i class="icon-twitter"></i></a></li>
+		        				<li><a href="#"><i class="icon-facebook"></i></a></li>
+		        				<li><a href="#"><i class="icon-linkedin"></i></a></li>
+		        				<li><a href="#"><i class="icon-dribbble"></i></a></li>
+		        			</ul>
+		        		</ul>
+		        	</div>
+		        </div>
+		        <div class="col-md-3 col-sm-12 col-xs-12 footr">
+		        	<div class="f-over">
+		        		<ul>
+		        			<li class=""><h3>	Your Inbox Deserves Better!</h3></li>
+		        			<li><a><span class="hand"></span>Get Occasional Updates & Fantastic Discount Offers</a></li>
+		        			<li>
+		        				<form>
+		        					<input type="email" name="email" id="eml" placeholder="Email">
+		        				</form>
+		        			</li>
+		        			<li>
+		        				<form>
+		        					<input type="button" name="btn" id="btn"  value="Subscribe">
+		        				</form>
+		        			</li>
+		        		</ul>
 
-								<p>Phone-
-									<a href="">0120 4120225</a>
-								</p>
-									<ul class="fh5co-social-icons">
-										<li><a href="#"><i class="icon-twitter"></i></a></li>
-										<li><a href="#"><i class="icon-facebook"></i></a></li>
-										<li><a href="#"><i class="icon-linkedin"></i></a></li>
-										<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								</ul>
-						 </ul>
-						 
-						
-					
-						 
-					 
-			</div>
-     </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 footr">
-				<div class="f-over">
-							<ul>
-								<li class=""><h3>	Your Inbox Deserves Better!</h3></li>
-								<li><a><span class="hand"></span>Get Occasional Updates & Fantastic Discount Offers</a></li>
-							  <li>
-										<form>
-												<input type="email" name="email" id="eml" placeholder="Email">
-										</form>
-								</li>
-								<li>
-										<form>
-												<input type="button" name="btn" id="btn"  value="Subscribe">
-										</form>
-								</li>
-							</ul>
-							
-							
 
-				</div>
-			</div>
-			</div>
+
+		        	</div>
+		        </div>
+		    </div>
 	
 		</div>
 		
 	</footer>
 	<div class="c_right text-certer">
-          <p>
-						<small class="block">copyright &copy; 2019. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank"></a> <a href="http://blog.gessato.com/" target="_blank"></a>  <a href="http://unsplash.co/" target="_blank"></a></small>
-					</p> 
+		<p>
+			<small class="block">copyright &copy; 2019. All Rights Reserved.</small> 
+			<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank"></a> <a href="http://blog.gessato.com/" target="_blank"></a>  <a href="http://unsplash.co/" target="_blank"></a></small>
+		</p> 
 	</div>
 	<!-- end of footer -->
 
@@ -181,24 +133,19 @@
 	<script src="<?php echo base_url('assets/');?>js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="<?php echo base_url('assets/');?>js/main.js"></script>
-  <!-- <script src="<?php echo base_url('assets/');?>js/library.js"></script> -->
+  	<!-- <script src="<?php echo base_url('assets/');?>js/library.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-   
 	<!-- partical -->
-  <script src="<?php echo base_url('assets/');?>js/particles.js"></script>
-  <script src="<?php echo base_url('assets/');?>js/app.js"></script>
-
-   <!-- stats.js -->
+  	<script src="<?php echo base_url('assets/');?>js/particles.js"></script>
+  	<script src="<?php echo base_url('assets/');?>js/app.js"></script>
+   	<!-- stats.js -->
 	 <script src="<?php echo base_url('assets/');?>js/lib/stats.js"></script>
-	 
-
 	 <!-- brand start -->
 	 <script src="<?php echo base_url('assets/');?>js/new/library.js"></script>
 	 <!-- Include all compiled plugins (below), or include individual files as needed -->
 	
 	 <script src="<?php echo base_url('assets/');?>js/new/owl.carousel.min.js"></script>
 	 <script src="<?php echo base_url('assets/');?>js/new/jquery.raty.js"></script>
-	
 	 <script src="<?php echo base_url('assets/');?>js/new/jquery.prettyPhoto.js"></script>
 	 <script src="<?php echo base_url('assets/');?>js/new/jquery.selectbox-0.2.js"></script>
 	 <script src="<?php echo base_url('assets/');?>js/new/theme-script.js"></script>
@@ -236,36 +183,36 @@
 			requestAnimationFrame(update);
 		</script>
 		 <script src="<?php echo base_url('assets/');?>js/modernizr-2.6.2.min.js"></script>
-	<script src="<?php echo base_url('assets/');?>js/jquery.js"></script>
+		<script src="<?php echo base_url('assets/');?>js/jquery.js"></script>
 	<!-- FOR IE9 below -->
 			<script>
-					var vc = vc || {};
-					(function () {
-							'use strict';
+					// var vc = vc || {};
+					// (function () {
+					// 		'use strict';
 				
-							vc.settings = {
-									"languageId": "hi",
-									"itemlanguageId": "en-IN", /*Added for OD-381*/
-									"marketId": "in",
-									"dealerLocatorUrl": "/in/find-a-dealer",
-									"requestQuoteURL": "",
-									"northToSouthSearch": "True",/*COM-493-Added*/
-									"sc_site": "in",
-									"enableservicetypetab": "True", //OD-90-Added
-									"enableViewInventoryCTA": "",/*OD-227-Added*/
-									"enabledealerWebsites": "True", //OD-497-Added
-									"enablesearchbasedonctry": "False",
-									"distanceInMiles": "1",
-						"CarModelID" : ""
-							};
+					// 		vc.settings = {
+					// 				"languageId": "hi",
+					// 				"itemlanguageId": "en-IN", /*Added for OD-381*/
+					// 				"marketId": "in",
+					// 				"dealerLocatorUrl": "/in/find-a-dealer",
+					// 				"requestQuoteURL": "",
+					// 				"northToSouthSearch": "True",COM-493-Added
+					// 				"sc_site": "in",
+					// 				"enableservicetypetab": "True", //OD-90-Added
+					// 				"enableViewInventoryCTA": "",/*OD-227-Added*/
+					// 				"enabledealerWebsites": "True", //OD-497-Added
+					// 				"enablesearchbasedonctry": "False",
+					// 				"distanceInMiles": "1",
+					// 	"CarModelID" : ""
+					// 		};
 				
-					}());
+					// }());
 				</script>
 
 
 
 <script>
-	$( "iconHeartInactive" ).click(function() {
+	/*$( "iconHeartInactive" ).click(function() {
 	$( this ).toggleClass( "iconHeartActive" );
-  });
+  });*/
 </script>

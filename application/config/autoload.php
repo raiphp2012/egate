@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'email', 'session');
+$autoload['libraries'] = array('database', 'email', 'session','cart','email','upload');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'file');
+$autoload['helper'] = array('url', 'file','html', 'form','string','text');
 
 /*
 | -------------------------------------------------------------------
@@ -125,11 +125,11 @@ $autoload['language'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['model'] = array('first_model', 'second_model');
+|$autoload['model'] = array('first_model', 'second_model');
 |
 | You can also supply an alternative model name to be assigned
 | in the controller:
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$autoload['model'] = array('common');

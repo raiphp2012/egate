@@ -1,8 +1,4 @@
 <?php
-
-/**
- * 
- */
 class Ajaxcontroller extends CI_Controller
 {
 	
@@ -165,10 +161,6 @@ function updatesize()
         }else{
           echo "Something Wrong";
         }
-
-
-
-
     }
 
         function update_profile()

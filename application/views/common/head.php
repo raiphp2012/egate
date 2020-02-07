@@ -31,7 +31,6 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/');?>css/style.css">
 	<link rel="stylesheet" href="<?php echo base_url('assets/');?>css/responsive.css">
 	<!-- Modernizr JS -->
-	
 	<!-- Slider -->
 	<link href="<?php echo base_url('assets/');?>css/new/owl.carousel.css" rel="stylesheet">
 	<link href="<?php echo base_url('assets/');?>css/new/owl.theme.css" rel="stylesheet">

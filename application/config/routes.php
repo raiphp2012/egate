@@ -1,4 +1,3 @@
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -28,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | There are three reserved routes:
 |
-|	$route['default_controller'] = 'Admincontroller';
+|	$route['default_controller'] = 'welcome';
 |
 | This route indicates which controller class should be loaded if the
 | URI contains no data. In the above example, the "welcome" class
@@ -50,7 +49,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Home';
+$route['default_controller'] = 'home';
+$route['admin'] = 'Admincontroller/category_add';
+$route['admin/login'] = 'Login/login1';
 $route['category_add'] = 'Admincontroller/category_add';
 $route['view_Category'] = 'Admincontroller/view_Category';
 $route['add_subcategory'] = 'Admincontroller/add_subcategory';
@@ -106,3 +107,5 @@ $route['faq'] = 'Dashboard/faq';
 $route['myproduct/(:num)'] = 'Dashboard/myproduct/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
