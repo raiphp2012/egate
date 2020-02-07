@@ -11,41 +11,38 @@
 			}
 		
     </style>
-
-  
-	<body>
-		
+	<body>	
 	<!-- <div class="fh5co-loader"></div> -->
 	<div id="page">
 	<!-- start header navbar -->
-	<?php $this->load->view('common/header');?>	
+
+	<?php 
+	$data['categories']=$categories;
+	$this->load->view('common/header',$data);
+	?>	
 	<!-- end of header navbar -->
+	<!-- <aside id="fh5co-hero" class="js-fullheight"> -->
+		<!-- <div class="flexslider js-fullheight"> -->
+		<!-- <ul class="slides">
+			<li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
+				<!-- <div class="overlay-gradient"></div> -->
 
-	<!-- <aside id="fh5co-hero" class="js-fullheight">
-		<div class="flexslider js-fullheight">
-			<ul class="slides">
-		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		
-		   	</li>
-		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
-		   		
-		   	</li>
-			   <li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
+			<!-- </li>
+			<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
+
+			</li>
+			<li style="background-image: url(./assets/images/banner/home_page_b_anner_1.jpg);">
 				
-		   	</li>
-		   	<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
-		   		
-		   	</li>
-		  	</ul>
-	  	</div>
-	</aside> -->
+			</li>
+			<li style="background-image: url(./assets/images/banner/home_page_b_anner_2.jpg);">
 
+			</li> -->
+		<!--</ul> -->
+	  	<!-- </div> -->
+	<!-- </aside> -->
 	<div class="ab_banner">
-		<img src="<?php echo base_url('./assets/images/banner/home_page_b_anner_1.jpg');?>" width="100%">
-		
+		<img src="<?php echo base_url('assets/images/');?>banner/home_page_b_anner_1.jpg" width="100%">
 	</div>
-	
     <!-- start Choose the projector -->
 	<div id="fh5co-product">
 		<div class="container-fluid">
@@ -55,34 +52,44 @@
 				</div>
 			</div>
 			<div class="row">
+					
+				<?php 
+				$subcategory_images=array(
+					'I Series'=>'./assets/images/i_series/i9-series.jpg',
+					'K Series'=>'./assets/images/i_series/k9-x-series.jpg',
+					'P Series'=>'./assets/images/i_series/p531-series.jpg',
+					'X Series'=>'./assets/images/i_series/x_series.jpg',
+					);
+				foreach ($home_subcategory_list as $subcategory) {
+					//print_r($subcategory);
+				?> 
 				<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/i9-series.jpg);">
-							<a href="product.html">
+						<div class="product-grid" style="background-image:url(<?php echo $subcategory_images[$subcategory->sub_cat_name];?>);">
+							<a href="<?php echo base_url('home/subchildcategory');?>">
 								<div class="inner" >
 									<p>
-										<a href="" class="icon"><i class="icon-shopping-cart"></i></a>
-										<a href="product.html" class="icon"><i class="icon-eye"></i></a>
+										<a href="<?php echo base_url('home/subchildcategory');?>" class="icon"><i class="icon-shopping-cart"></i></a>
+										<a href="<?php echo base_url('home/subchildcategory');?>" class="icon"><i class="icon-eye"></i></a>
 									</p>
 								</div>
 						    </a>
 						</div>
 						<div class="desc">
-							<h3><a href="product.html">I SERIES</a></h3>
+							<h3><a href="<?php echo base_url('home/subchildcategory');?>"><?php echo $subcategory->sub_cat_name;?></a></h3>
 							<p class="price">
-								Scandinavian luxury, unparalleled technology, and effortless power translate to sedans that let you enjoy every mile of every journey.
+								<?php echo $subcategory->description; ?>
 							</p>
-							<a href=""></a>
+							<a href="#"></a>
 							
 						</div>
-						<!--  -->
 						
-						<!--  -->
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+				<?php } ?>
+				<!-- <div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/k9-x-series.jpg);">
+						<div class="product-grid" style="background-image:url();">
 							<span class="sale">Sale</span>
 							<div class="inner">
 								<p>
@@ -100,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+				<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
 						<div class="product-grid" style="background-image:url(./assets/images/i_series/p531-series.jpg);">
 							<div class="inner">
@@ -119,7 +126,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+				<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
 						<div class="product-grid" style="background-image:url(./assets/images/i_series/x_series.jpg);">
 							<div class="inner">
@@ -137,92 +144,49 @@
 							<a href=""></a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<!-- added by archit -->
 			<div class="row sliding_box">
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+
+				<?php 
+
+				$category_images=array(
+					'Projectors'=>'./assets/images/i_series/speaker-Category.jpg',
+					'HEADPHONES'=>'./assets/images/i_series/Headphone-Series.jpg',
+					'Accessories'=>'./assets/images/i_series/acces-series.jpg',
+					'SCREENS'=>'./assets/images/i_series/screen-series.jpg',
+					);
+
+				foreach ($home_category_list as $category) { 
+					
+
+
+					?>
+				<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/speaker-Category.jpg);">
+						<div class="product-grid" style="background-image:url(<?php echo $category_images[$category->cate_name];?>);">
 							<div class="inner">
 								<p>
-									<a href="speeker.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="speeker.html" class="icon"><i class="icon-eye"></i></a>
+									<a href="<?php echo base_url('home/category');?>" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a href="<?php echo base_url('home/category');?>" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
-						
 						<!--  -->
 						<div class="desc">
-							<h3><a href="speeker.html">SPEEKERS</a></h3>
+							<h3><a href="<?php echo base_url('home/category');?>"><?php echo $category->cate_name;?></a></h3>
 							<p class="price">
-								Scandinavian luxury, unparalleled technology, and effortless power translate to sedans that let you enjoy every mile of every journey.
+								<?php echo $category->description;?>
 							</p>
 							<a href=""></a>
 						</div>
 						<!--  -->
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/Headphone-Series.jpg);">
-							<span class="sale">Sale</span>
-							<div class="inner">
-								<p>
-									<a href="product.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="product.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="product.html">HEADPHONES</a></h3>
-							<p class="price">
-								Scandinavian luxury, unparalleled technology, and effortless power translate to sedans that let you enjoy every mile of every journey.
-							</p>
-							<a href=""></a>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/screen-series.jpg);">
-							<div class="inner">
-								<p>
-									<a href="product.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="product.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="product.html">SCREEN</a></h3>
-							<p class="price">
-								Scandinavian luxury, unparalleled technology, and effortless power translate to sedans that let you enjoy every mile of every journey.
-							</p>
-							<a href=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(./assets/images/i_series/acces-series.jpg);">
-							<div class="inner">
-								<p>
-									<a href="product.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="product.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="product.html">ACCESSORIES</a></h3>
-								<p class="price">
-								Scandinavian luxury, unparalleled technology, and effortless power translate to sedans that let you enjoy every mile of every journey.
-							</p>
-							<a href=""></a>
-						</div>
-					</div>
-				</div>
+
+				<?php  } ?>
+				
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -236,7 +200,7 @@
 			<!-- <center><div id="ft">View More</div></center> -->
 			<div id="hr">
 				<div class="row">
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+					<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 						<div class="product">
 							<div class="product-grid" style="background-image:url(./assets/images/i_series/egate-android-10.png);">
 								<div class="inner">
@@ -256,7 +220,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+					<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 						<div class="product">
 							<div class="product-grid" style="background-image:url(./assets/images/i_series/i9-1.png);">
 								<span class="sale">Sale</span>
@@ -276,7 +240,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+					<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 						<div class="product">
 							<div class="product-grid" style="background-image:url(./assets/images/i_series/i9-1_standar.png);">
 								<div class="inner">
@@ -295,7 +259,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
+					<div class="col-md-3 col-sm-3 col-xs-6 text-center ">
 						<div class="product">
 							<div class="product-grid" style="background-image:url(./assets/images/e_gate_pro.jpg);">
 								<div class="inner">
@@ -595,36 +559,10 @@
 	</div> -->
 	<!-- end of count -------------------->
 
-	<!-- <div id="fh5co-started">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Newsletter</h2>
-					<p>Just stay tune for our latest Product. Now you can subscribe</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<form class="form-inline">
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div> -->
+	
 
 	<?php $this->load->view('common/footer');?>
 	
-
-	<!-- partical -->
 	</body>
 </html>
 

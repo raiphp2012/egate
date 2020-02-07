@@ -1,21 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 	<?php $this->load->view('common/head');?>
-	<body>
-		
+	<body>		
 	<!-- <div class="fh5co-loader"></div> -->
 	<div id="page">
 	<!-- start header navbar -->
 	<?php $this->load->view('common/header');?>
 	<!-- end of header navbar -->
-
 	<div class="ab_banner">
-			<img src="<?php echo base_url('assets/');?>images/about.jpg" width="100%">
-			<div class="ab_text">
-				<h1></h1>
-				
-			</div>
+		<img src="<?php echo base_url('assets/');?>images/about.jpg" width="100%">
+		<div class="ab_text">
+			<h1></h1>
+
 		</div>
+	</div>
 	
 	<div id="fh5co-about">
 		<div class="container">

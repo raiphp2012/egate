@@ -4,7 +4,7 @@
 <!-- Mirrored from colorlib.com//polygon/admindek/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Sep 2019 13:16:52 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Admindek | Admin Template</title>
+<title>Egate:: Login</title>
 
 
 <!--[if lt IE 10]>
@@ -134,7 +134,7 @@
 <div class="row m-t-25 text-left">
 <div class="col-12">
 <div class="forgot-phone text-right float-right">
-<a href="auth-reset-password.html" class="text-right f-w-600"> Forgot Password?</a>
+<a href="#" class="text-right f-w-600"> Forgot Password?</a>
 </div>
 </div>
 </div>

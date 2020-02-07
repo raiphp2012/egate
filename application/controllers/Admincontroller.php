@@ -1,21 +1,19 @@
 <?php 
-   /**
-    * 
-    */
    class Admincontroller extends CI_Controller
    {
      public function __construct()
      {
-       parent::__construct();
-       $this->load->library('form_validation');
-       $this->load->model('Admin_model');
-       $this->load->library('email');
-       $this->load->library('session');
-       if(empty($this->session->userdata('username'))){
-          
-          redirect('Login/login1');
-        }     
+         parent::__construct();
+         $this->load->library('form_validation');
+         $this->load->model('Admin_model');
+         $this->load->library('email');
+         $this->load->library('session');
+        if(empty($this->session->userdata('username'))){
+          redirect('admin/login');
+        }
+                   
      }
+     
      function index()
      {
        $data['title'] = "Index";
@@ -53,8 +51,8 @@
          $config['allowed_types'] = 'gif|jpg|png|jpeg';
          $config['max_width'] = '2000';
          $config['min_width'] = '100';
-                   // $config['max_height'] = '900';
-                   // $config['min_height'] = '400';
+         // $config['max_height'] = '900';
+         // $config['min_height'] = '400';
          $this->load->library('upload',$config);
          if ($this->upload->do_upload('cate_image')) 
          {
